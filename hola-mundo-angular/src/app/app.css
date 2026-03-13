@@ -1,0 +1,34 @@
+/* Centra todo en la pantalla */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5; /* Un gris muy claro de fondo */
+}
+
+.titulo {
+  /* Fuente y tamaño */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  
+  /* Alineación */
+  text-align: center;
+  
+  /* Color con degradado moderno */
+  background: linear-gradient(to right, #007bff, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Sombra suave para dar profundidad */
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  
+  /* Animación suave al aparecer */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
